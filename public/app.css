@@ -1,17 +1,34 @@
+body,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+    /* Set you're content font stack here: */
+  font-family:'PT Serif';
+  letter-spacing:1px;
+  line-height:1.75em;
+  font-size:100%;
+  color:#333;
+}
+
 .header {
-  height:6em;
+  height:8em;
   position:relative;
 }
 
-.main {
-}
-
 .footer {
-  height:4em;
+  height:6em;
   position:relative;
 }
 
 .bottom {
    position:absolute;
    bottom:0;
+}
+
+a {
+  text-decoration:none;
+  color:#0033BB;
+  font-size:105%;
+}
+a:hover {
+  text-decoration:underline;
 }
