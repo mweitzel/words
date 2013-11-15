@@ -10,12 +10,12 @@ body,
 }
 
 .header {
-  height:8em;
+  height:6em;
   position:relative;
 }
 
 .footer {
-  height:6em;
+  height:4em;
   position:relative;
 }
 
@@ -31,4 +31,12 @@ a {
 }
 a:hover {
   text-decoration:underline;
+}
+
+h1, h2, h3 {
+  font-weight:normal;
+}
+
+.l-box {
+  padding:1.3em;
 }
