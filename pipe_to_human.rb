@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'erb'
 
 class PipeToHuman < Sinatra::Base
   # ... app code here ...
@@ -6,9 +7,8 @@ class PipeToHuman < Sinatra::Base
   # start the server if ruby file executed directly
   run! if app_file == $0
 
-
   get '/' do
-    "sup"
+    erb :thing
   end
 
 end
