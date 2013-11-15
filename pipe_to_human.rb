@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'erb'
+require 'markdown'
 
 class PipeToHuman < Sinatra::Base
   # ... app code here ...
@@ -8,7 +9,15 @@ class PipeToHuman < Sinatra::Base
   run! if app_file == $0
 
   get '/' do
-    erb :thing
+    erb :layout, :locals => { :title => "index", :text => markdown(:index) }
+  end
+
+  get '/:title' do |title|
+    begin
+      erb :layout, :locals => { :title => title, :text => markdown(title.to_sym) }
+    rescue
+      erb :layout, :locals => { :title => title, :text => "cant find this one.."}
+    end
   end
 
 end

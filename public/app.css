@@ -40,3 +40,8 @@ h1, h2, h3 {
 .l-box {
   padding:1.3em;
 }
+
+hr {
+  margin-left:1em;
+  margin-right:1em;
+}
