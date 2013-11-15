@@ -2,7 +2,7 @@ require 'sinatra/base'
 require 'erb'
 require 'markdown'
 
-class PipeToHuman < Sinatra::Base
+class Words < Sinatra::Base
   # ... app code here ...
 
   # start the server if ruby file executed directly
