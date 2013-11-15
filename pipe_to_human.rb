@@ -9,7 +9,7 @@ class PipeToHuman < Sinatra::Base
   run! if app_file == $0
 
   get '/' do
-    erb :layout, :locals => { :title => "index", :text => markdown(:index) }
+    erb :layout, :locals => { :title => "index", :text => (markdown(:index) rescue "") }
   end
 
   get '/:title' do |title|
