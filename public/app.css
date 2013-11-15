@@ -1,0 +1,17 @@
+.header {
+  height:6em;
+  position:relative;
+}
+
+.main {
+}
+
+.footer {
+  height:4em;
+  position:relative;
+}
+
+.bottom {
+   position:absolute;
+   bottom:0;
+}
